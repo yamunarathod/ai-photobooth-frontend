@@ -33,7 +33,7 @@ export const swapFaces = async (
     }
 
     // Make API call
-    const swapResponse = await fetch("http://localhost:8000/api/swap-face/", {
+    const swapResponse = await fetch("https://5c72-124-40-247-18.ngrok-free.app/api/swap-face/", {
       method: "POST",
       body: formData,
     });
