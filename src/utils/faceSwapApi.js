@@ -33,7 +33,7 @@ export const swapFaces = async (
     }
 
     // Make API call
-    const swapResponse = await fetch("https://robust-next-bee.ngrok-free.app/api/swap-face/", {
+    const swapResponse = await fetch("http://localhost:8000/api/swap-face/", {
       method: "POST",
       body: formData,
     });
