@@ -6,9 +6,9 @@ import "../styles/global.css";
 const RegistrationScreen = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    name: "yamuna",
-    contact: "8197142794",
-    email: "yamun@craftech360.com",
+    name: "",
+    contact: "",
+    email: "",
   });
   const [errors, setErrors] = useState({});
 
