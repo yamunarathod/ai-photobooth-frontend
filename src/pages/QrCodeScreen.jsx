@@ -28,6 +28,10 @@ const QrCodeScreen = () => {
     setDownloadUrl(imageUrl);
   }, [navigate]);
 
+  const handlePrintClick = () => {
+    navigate('/print-image', { state: { imageUrl: swappedImage } });
+  };
+
   return (
     <div className="screen third-background">
       <div className="qr-code-container">
@@ -69,7 +73,7 @@ const QrCodeScreen = () => {
         </div>
 
         <div className="button-container">
-          <button className="button print-button" onClick={handlePrint}>
+          <button className="button print-button" onClick={handlePrintClick}>
             Print Image
           </button>
           <button
